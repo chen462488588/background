@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="off" monitorInterval="1800">
+
+    <properties>
+        <!--        <property name="LOG_HOME">logs/sample</property>
+                <property name="FILE_NAME">mylog</property>-->
+    </properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %highlight(%-5level) %logger{15} %L : %msg%n"/>
+        </Console>
+
+    </Appenders>
+
+    <Loggers>
+        <Logger name="org.springframework" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Logger name="com.sono" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <!--   <Root level="info">
+                 <AppenderRef ref="Console" />
+             </Root>-->
+    </Loggers>
+</Configuration>
