@@ -34,10 +34,6 @@
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
 
-
-
-
-
     <servlet>
         <servlet-name>dispacherServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -52,6 +48,4 @@
         <servlet-name>dispacherServlet</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
-
-
 </web-app>
