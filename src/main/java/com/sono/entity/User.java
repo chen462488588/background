@@ -1,5 +1,10 @@
 package com.sono.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
     private Integer id;
 

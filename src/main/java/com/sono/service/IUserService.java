@@ -11,4 +11,6 @@ public interface IUserService {
 
     User login(User user);
 
+    String batchInsert( );
+
 }
