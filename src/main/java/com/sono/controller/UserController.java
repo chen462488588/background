@@ -31,7 +31,13 @@ public class UserController {
     public String batchInsert() {
         String result = userService.batchInsert();
         return result;
+    }
 
+    @RequestMapping("deleteUser")
+    @ResponseBody
+    public String deleteUser(@RequestParam(value = "id") Integer id) {
+       String msg =  userService.deleteUserById(id);
+       return msg;
     }
 }
 

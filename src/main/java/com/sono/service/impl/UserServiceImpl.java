@@ -15,6 +15,7 @@ import java.util.List;
 public class UserServiceImpl implements IUserService {
     @Autowired
     UserMapper userMapper;
+
     @Override
     public User queryUserById(Integer id) {
         User user = userMapper.selectByPrimaryKey(id);
@@ -38,18 +39,27 @@ public class UserServiceImpl implements IUserService {
     @Override
     public String batchInsert() {
         for (int i = 0; i < 1000; i++) {
-          User  user = new User(null, "名字"+i, "昵称"+i, 25, "123", true);
-          try {
+            User user = new User(null, "名字" + i, "昵称" + i, 25, "123", true);
+            try {
 
-            userMapper.insert(user);
-          }
-          catch (Exception e){
-              e.printStackTrace();
-              log.error("插入用户{}数据出错", user.toString());
-              return  "insert data error.数据："+user.toString();
-          }
+                userMapper.insert(user);
+            } catch (Exception e) {
+                e.printStackTrace();
+                log.error("插入用户{}数据出错", user.toString());
+                return "insert data error.数据：" + user.toString();
+            }
         }
         return "insert data success!";
+    }
+
+    @Override
+    public String deleteUserById(Integer id) {
+        int row = userMapper.deleteByPrimaryKey(id);
+        if (row == 0) {
+            log.error("删除用户id为{}的操作失败。", id);
+            return "删除用户id为" + id + "的操作失败";
+        }
+        return "删除成功";
     }
 
 

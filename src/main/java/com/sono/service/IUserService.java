@@ -13,4 +13,5 @@ public interface IUserService {
 
     String batchInsert( );
 
+    String deleteUserById(Integer id);
 }
