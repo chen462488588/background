@@ -6,17 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d4026c6-0c8a-43f7-bf8e-c6f6768d450f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sono/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sono/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sono/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sono/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sono/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sono/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sono/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sono/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sono/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sono/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sono/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sono/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shiro-1.0-SNAPSHOT/WEB-INF/classes/com/sono/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shiro-1.0-SNAPSHOT/WEB-INF/classes/com/sono/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shiro-1.0-SNAPSHOT/WEB-INF/classes/com/sono/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/shiro-1.0-SNAPSHOT/WEB-INF/classes/com/sono/controller/UserController.java" afterDir="false" />
-    </list>
+    <list default="true" id="8d4026c6-0c8a-43f7-bf8e-c6f6768d450f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/test/target/" />
@@ -75,8 +65,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sono/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+            <state relative-caret-position="-57">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sono/service/impl/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="43" column="36" lean-forward="true" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -368,23 +358,7 @@
               <item name="shiro" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shiro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shiro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shiro" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -402,7 +376,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -892,8 +866,16 @@
       <workItem from="1562028448987" duration="10130000" />
       <workItem from="1562114652647" duration="1815000" />
       <workItem from="1562138144208" duration="3825000" />
-      <workItem from="1562201117590" duration="3807000" />
+      <workItem from="1562201117590" duration="4150000" />
     </task>
+    <task id="LOCAL-00001" summary="删除target，增加接口，批量插入测试数据到数据库">
+      <created>1562228626554</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562228626554</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -911,7 +893,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66325000" />
+    <option name="totallyTimeSpent" value="66668000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -937,17 +919,17 @@
       <window_info id="Image Layers" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295964" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49938875" visible="true" weight="0.42359552" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49816626" weight="0.42359552" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32174888" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.19394618" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.4987775" visible="true" weight="0.32921347" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50061125" side_tool="true" weight="0.3542601" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5012225" side_tool="true" visible="true" weight="0.32921347" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.33744395" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="bottom" id="Database Console" order="15" visible="true" weight="0.3295964" />
@@ -959,7 +941,7 @@
       <window_info anchor="right" id="Ant Build" order="1" show_stripe_button="false" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" weight="0.16625917" />
-      <window_info active="true" anchor="right" id="Maven" order="4" visible="true" weight="0.12652811" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.12652811" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Palette" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
@@ -968,6 +950,36 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="删除target，增加接口，批量插入测试数据到数据库" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除target，增加接口，批量插入测试数据到数据库" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1337,7 +1349,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sono/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="43" column="36" lean-forward="true" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1353,8 +1365,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sono/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        <state relative-caret-position="-57">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
