@@ -1,6 +1,6 @@
-package com.sono.controller;
+package com.sonoscape.controller;
 
-import com.sono.service.IHelloService;
+import com.sonoscape.service.IHelloService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

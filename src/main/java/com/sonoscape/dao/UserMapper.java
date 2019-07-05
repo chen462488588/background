@@ -1,9 +1,10 @@
-package com.sono.dao;
+package com.sonoscape.dao;
 
-import com.sono.entity.User;
-import com.sono.entity.UserExample;
-import java.util.List;
+import com.sonoscape.entity.User;
+import com.sonoscape.entity.UserExample;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface UserMapper {
     int countByExample(UserExample example);

@@ -5,6 +5,5 @@
 
 
     <import resource="spring-mybatis.xml"/>
-<!--    <import resource="spring-shiro.xml"/>-->
 
 </beans>

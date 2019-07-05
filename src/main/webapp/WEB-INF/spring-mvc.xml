@@ -11,7 +11,7 @@
         http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd">
 
     <!-- spring扫描的包 -->
-    <context:component-scan base-package="com.sono"/>
+    <context:component-scan base-package="com.sonoscape"/>
 
     <!-- DispatcherServlet不处理静态资源,交给服务器默认的servlet处理 -->
     <mvc:default-servlet-handler/>
@@ -43,4 +43,17 @@
             </bean>
         </mvc:message-converters>
     </mvc:annotation-driven>
+
+    <!-- 配置Conveter转换器 转换工厂 （日期、去掉前后空格）。。 -->
+    <bean id="conversionServiceFactoryBean"
+          class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <!-- 配置 多个转换器 -->
+        <property name="converters">
+            <list>
+                <!-- 可以配置多个转换器 -->
+                <!-- <bean class="com.itheima.springmvc.conversion.DateConveter" /> <bean
+                    class="com.itheima.springmvc.conversion.DateConveter" /> -->
+            </list>
+        </property>
+    </bean>
 </beans>

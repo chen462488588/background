@@ -1,9 +1,9 @@
-package com.sono.service.impl;
+package com.sonoscape.service.impl;
 
-import com.sono.dao.UserMapper;
-import com.sono.entity.User;
-import com.sono.entity.UserExample;
-import com.sono.service.IUserService;
+import com.sonoscape.dao.UserMapper;
+import com.sonoscape.entity.User;
+import com.sonoscape.entity.UserExample;
+import com.sonoscape.service.IUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -60,6 +60,47 @@ public class UserServiceImpl implements IUserService {
             return "删除用户id为" + id + "的操作失败";
         }
         return "删除成功";
+    }
+
+    @Override
+    public boolean isExists(String username) {
+        UserExample example = new UserExample();
+        example.createCriteria().andUsernameEqualTo(username);
+        List<User> users = userMapper.selectByExample(example);
+        if (null != users && users.size() > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public User queryByUsername(String username) {
+        UserExample example = new UserExample();
+        example.createCriteria().andUsernameEqualTo(username);
+        List<User> users = userMapper.selectByExample(example);
+        if (null != users && users.size() > 0) {
+            return users.get(0);
+        }
+        return null;
+    }
+
+    @Override
+    public boolean checkIsExists(String username, String password) {
+        UserExample example = new UserExample();
+        example.createCriteria().andUsernameEqualTo(username);
+        List<User> users = userMapper.selectByExample(example);
+        if (null != users && users.size() > 0) {
+            if (users.get(0).getPassword().equals(password)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public int addUser(User user) {
+
+        return  userMapper.insert(user);
     }
 
 

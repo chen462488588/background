@@ -14,10 +14,14 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="org.springframework" level="debug" additivity="false">
+        <Logger name="org.springframework" level="info" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
-        <Logger name="com.sono" level="debug" additivity="false">
+      <Logger name="com.sonoscape.service" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <!-- mybatis操作数据库日志    -->
+        <Logger name="com.sonoscape.dao" level="debug" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
         <!--   <Root level="info">

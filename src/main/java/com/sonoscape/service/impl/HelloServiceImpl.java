@@ -1,6 +1,6 @@
-package com.sono.service.impl;
+package com.sonoscape.service.impl;
 
-import com.sono.service.IHelloService;
+import com.sonoscape.service.IHelloService;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,4 +1,4 @@
-package com.sono.entity;
+package com.sonoscape.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

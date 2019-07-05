@@ -1,4 +1,4 @@
-package com.sono.entity;
+package com.sonoscape.entity;
 
 import java.util.ArrayList;
 import java.util.List;
