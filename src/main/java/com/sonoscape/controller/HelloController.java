@@ -36,7 +36,7 @@ public class HelloController {
     }
 
     //模拟登陆
-    @GetMapping("test1")
+    @GetMapping("login")
     @ResponseBody
     public String test(@RequestParam String name, @RequestParam String password) {
         Key key = new SecretKeySpec("mysecret".getBytes(), SignatureAlgorithm.HS512.getJcaName());
@@ -44,20 +44,14 @@ public class HelloController {
         String subject = JSON.toJSONString(student);
         Date exp = new Date(System.currentTimeMillis() + 2 * 60 * 1000);
         String jws = Jwts.builder().setSubject(subject).signWith(SignatureAlgorithm.HS512, key).setExpiration(exp).compact();
-        return jws;
+        return JSON.toJSONString(jws);
     }
 
     //模拟需要验证的接口
     @GetMapping("test2")
     @ResponseBody
-    public String test1(@RequestParam(required = false) String accessToken) {
-        Key key = new SecretKeySpec("mysecret".getBytes(), SignatureAlgorithm.HS512.getJcaName());
+    public String test1() {
 
-        try {
-            Jwts.parser().setSigningKey(key).parseClaimsJws(accessToken);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return "111";
+        return "verify ok!";
     }
 }
