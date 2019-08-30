@@ -12,7 +12,7 @@ public class LoginController {
     @Autowired
     private IUserService userService;
 
-    @GetMapping("user/{id}")
+    @RequestMapping("user/{id}")
     @ResponseBody
     public User queryUserById(@PathVariable Integer id) {
         User user = userService.queryUserById(id);

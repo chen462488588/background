@@ -7,18 +7,24 @@
     </properties>
 
     <Appenders>
-        <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %highlight(%-5level) %logger{15} %L : %msg%n"/>
+        <Console name="Console"   target="SYSTEM_OUT">
+            <PatternLayout  charset="GBK" pattern="%d{HH:mm:ss.SSS} [%t] %highlight(%-5level) %logger{15} %L : %msg%n"/>
         </Console>
 
+    <!--文件会打印出所有信息，这个log每次运行程序会自动清空，由append属性决定，这个也挺有用的，适合临时测试用-->
+        <File name="log" fileName="C:\Users\4506\Desktop\test.log" append="true">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n"/>
+        </File>
     </Appenders>
+
 
     <Loggers>
         <Logger name="org.springframework" level="info" additivity="false">
             <AppenderRef ref="Console"/>
         </Logger>
-      <Logger name="com.sonoscape.service" level="info" additivity="false">
+      <Logger name="com.sonoscape" level="info" additivity="false">
             <AppenderRef ref="Console"/>
+            <AppenderRef ref="log"/>
         </Logger>
         <!-- mybatis操作数据库日志    -->
         <Logger name="com.sonoscape.dao" level="debug" additivity="false">

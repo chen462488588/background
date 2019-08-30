@@ -5,13 +5,12 @@ import io.jsonwebtoken.SignatureAlgorithm;
 
 import javax.crypto.spec.SecretKeySpec;
 import javax.servlet.*;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.security.Key;
 
-@WebFilter(filterName = "PageFilter", urlPatterns = {"/*"})
+//@WebFilter(filterName = "PageFilter", urlPatterns = {"/*"})
 public class PageFilter implements Filter {
     public void destroy() {
     }

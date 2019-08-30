@@ -29,6 +29,7 @@ public class ExceptionAspect {
     @AfterThrowing(pointcut = "gloableExceptionHandler()", throwing = "e")
     public void doException(JoinPoint joinPoint, Throwable e) {
         if (e != null) {
+            e.printStackTrace();
             log.error("出现异常，内容：{},{}", e.getCause(), e.getMessage());
         }
     }

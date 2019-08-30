@@ -32,7 +32,7 @@ public class LogAspect {
 
     @Before("printEnterLog()")
     public void before(JoinPoint joinPoint){
-        log.error("获取方法名：{}",joinPoint.getSignature().getName());
+        log.info("执行方法：{}",joinPoint.getSignature().getName());
     }
 
 }

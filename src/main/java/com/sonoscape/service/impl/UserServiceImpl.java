@@ -5,9 +5,11 @@ import com.sonoscape.entity.User;
 import com.sonoscape.entity.UserExample;
 import com.sonoscape.service.IUserService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 @Service
@@ -99,7 +101,11 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public int addUser(User user) {
-
+        try {
+            user.setPassword(DigestUtils.md5Hex(user.getPassword().getBytes("utf-8")));
+        } catch (UnsupportedEncodingException e) {
+            log.error("用户密码加密失败，异常信息：{}", e.getMessage());
+        }
         return  userMapper.insert(user);
     }
 
